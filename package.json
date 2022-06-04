@@ -1,9 +1,9 @@
 {
-  "name": "vite-plugin-imagemin",
+  "name": "gupo-imagemin",
   "version": "0.0.1",
   "description": "A tool compressing image assets",
   "bin": {
-    "gupo-deploy": "dist/index.js"
+    "gupo-imagemin": "dist/index.js"
   },
   "types": "dist/index.d.ts",
   "license": "MIT",
