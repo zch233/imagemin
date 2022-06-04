@@ -29,7 +29,7 @@ files = files.filter(v => filterFile(v, extRE));
     Promise.all(files.map(async filePath => {
         const source = fs.readFileSync(filePath)
         const content = await processFile(filePath, source)
-        if (content) {
+        if (content && content.length < source.length) {
             fs.writeFileSync(filePath, content)
         }
     })).then(() => {
