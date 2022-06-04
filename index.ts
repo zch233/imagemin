@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-console.log(process.argv);
 
 import chalk from "chalk";
 import {isFunction, isRegExp} from "./utils";
