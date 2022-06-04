@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+console.log(process.argv);
 
 import chalk from "chalk";
 import {isFunction, isRegExp} from "./utils";
@@ -12,8 +13,10 @@ import imageminPngquant from "imagemin-pngquant";
 import imageminSvgo from "imagemin-svgo";
 
 const verbose = true
-const assetsPath = './src/assets'
-const extRE = /\.(png|jpeg|gif|jpg|bmp|svg)$/i
+const assetsPathIndex = process.argv.findIndex(v => v === '--assetsPath')
+const assetsPath = assetsPathIndex >= 0 ? process.argv[assetsPathIndex + 1] : './src/assets'
+const extREIndex = process.argv.findIndex(v => v === '--extRE')
+const extRE = extREIndex >= 0 ? eval(process.argv[extREIndex + 1]) : /\.(png|jpeg|gif|jpg|bmp|svg)$/i
 
 let tinyMap = new Map<
     string,
