@@ -29,7 +29,7 @@ files = files.filter(v => filterFile(v, extRE));
     Promise.all(files.map(async filePath => {
         const source = fs.readFileSync(filePath)
         const content = await processFile(filePath, source)
-        if (content && content.byteLength <= source.byteLength) {
+        if (content) {
             fs.writeFileSync(filePath, content)
         }
     })).then(() => {
@@ -151,13 +151,19 @@ async function processFile(filePath: string, buffer: Buffer) {
 
         const size = content.byteLength,
             oldSize = buffer.byteLength
-        tinyMap.set(filePath, {
-            size: size / 1024,
-            oldSize: oldSize / 1024,
-            ratio: size / oldSize - 1,
-        })
 
-        return content
+        if (size / oldSize - 1 < 0) {
+            tinyMap.set(filePath, {
+                size: size / 1024,
+                oldSize: oldSize / 1024,
+                ratio: size / oldSize - 1,
+            })
+            console.info(chalk.dim(filePath, 'ratio:', size / oldSize - 1))
+            return content
+        } else { // 压缩后比原图还大的跳过
+            console.info(chalk.dim(filePath, 'ratio:', size / oldSize - 1), chalk.red('skip!'))
+            return false
+        }
     } catch (error) {
         console.error('imagemin error:' + filePath)
     }
