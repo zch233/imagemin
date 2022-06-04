@@ -156,7 +156,6 @@ async function processFile(filePath: string, buffer: Buffer) {
             oldSize: oldSize / 1024,
             ratio: size / oldSize - 1,
         })
-        console.log(tinyMap, 2);
 
         return content
     } catch (error) {
