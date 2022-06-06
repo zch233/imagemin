@@ -1,6 +1,6 @@
 {
   "name": "gupo-imagemin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tool compressing image assets",
   "bin": {
     "gupo-imagemin": "dist/index.js"
