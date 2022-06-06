@@ -35,6 +35,8 @@ files = files.filter(v => filterFile(v, extRE));
             fs.writeFileSync(filePath, content)
         }
     })).then(() => {
+        console.info(chalk.blueBright('✨ 压缩完成'))
+        console.info(chalk.blueBright('✨ 正在生成报告文件...'))
         if (verbose) {
             handleOutputLogger(tinyMap)
         }
