@@ -14,7 +14,10 @@ yarn global add imagemin
 
 *注意:*
 ```
-// 安装不上请在 global package 或者 project package 加上
+// 如果 npm 安装不上，请使用 cnpm
+cnpm install gupo-imagemin -g
+
+// yarn 安装不上请在 global package 或者 project package 加上
 "resolutions": {
     "bin-wrapper": "npm:bin-wrapper-china",
 }
