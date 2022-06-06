@@ -1,6 +1,6 @@
 {
   "name": "gupo-imagemin",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A tool compressing image assets",
   "bin": {
     "gupo-imagemin": "dist/index.js"
@@ -31,8 +31,7 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
     "imagemin-webp": "^6.0.0",
-    "jpegtran-bin": "^6.0.1",
-    "uuid": "7.0.3"
+    "jpegtran-bin": "^6.0.1"
   },
   "resolutions": {
     "bin-wrapper": "npm:bin-wrapper-china",
