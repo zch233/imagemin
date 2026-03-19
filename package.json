@@ -1,9 +1,9 @@
 {
-  "name": "imageminx",
+  "name": "imagemin-auto",
   "version": "1.0.0",
   "description": "A tool compressing image assets for cli",
   "bin": {
-    "imageminx": "dist/index.js"
+    "imagemin-auto": "dist/index.js"
   },
   "types": "dist/index.d.ts",
   "license": "MIT",

@@ -1,4 +1,4 @@
-# imageminx
+# imagemin-auto
 
 > imagemin(extreme) for CLI automation
 
@@ -7,17 +7,17 @@
 ##### 安装
 
 ```
-npm install imageminx -g
+npm install imagemin-auto -g
 
 // or
 
-yarn global add imageminx
+yarn global add imagemin-auto
 ```
 
 *注意:*
 ```
 // 如果 npm 安装不上，请使用 cnpm
-cnpm install imageminx -g
+cnpm install imagemin-auto -g
 
 // yarn 安装不上请在 global package 或者 project package 加上
 "resolutions": {
@@ -29,7 +29,7 @@ cnpm install imageminx -g
 
 ```
 // 默认将压缩 ./src/assets 下的文件
-imageminx
+imagemin-auto
 ```
 
 ### 参数
