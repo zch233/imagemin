@@ -1,6 +1,6 @@
 # imageminx
 
-> imagemin extreme
+> imagemin(extreme) for CLI automation
 
 ## 食用方法
 
@@ -46,3 +46,6 @@ $ imagemin --help
     --extRE  RegExp | ((file: string) => boolean) // default: /\.(png|jpeg|gif|jpg|bmp|svg)$/i
 ```
 
+## Related
+
+- [imagemin](https://github.com/imagemin/imagemin) - API for this module
