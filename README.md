@@ -35,11 +35,11 @@ imagemin-auto
 ### 参数
 
 ```
-$ imagemin --help
+$ imagemin-auto --help
 
   Usage
-    $ imagemin --assetsPath [压缩文件目录]
-    $ imagemin --extRE [目标文件过滤条件]
+    $ imagemin-auto --assetsPath [压缩文件目录]
+    $ imagemin-auto --extRE [目标文件过滤条件]
 
   Options
     --assetsPath string // default: ./src/assets
