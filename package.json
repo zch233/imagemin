@@ -1,9 +1,9 @@
 {
-  "name": "gupo-imagemin",
-  "version": "1.0.4",
+  "name": "imageminx",
+  "version": "1.0.0",
   "description": "A tool compressing image assets",
   "bin": {
-    "gupo-imagemin": "dist/index.js"
+    "imageminx": "dist/index.js"
   },
   "types": "dist/index.d.ts",
   "license": "MIT",

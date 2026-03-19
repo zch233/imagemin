@@ -1,21 +1,23 @@
-# gupo-imagemin
+# imageminx
+
+> imagemin extreme
 
 ## 食用方法
 
 ##### 安装
 
 ```
-npm install gupo-imagemin -g
+npm install imageminx -g
 
 // or
 
-yarn global add imagemin
+yarn global add imageminx
 ```
 
 *注意:*
 ```
 // 如果 npm 安装不上，请使用 cnpm
-cnpm install gupo-imagemin -g
+cnpm install imageminx -g
 
 // yarn 安装不上请在 global package 或者 project package 加上
 "resolutions": {
@@ -27,17 +29,17 @@ cnpm install gupo-imagemin -g
 
 ```
 // 默认将压缩 ./src/assets 下的文件
-gupo-imagemin
+imageminx
 ```
 
 ### 参数
 
 ```
-$ gupo-imagemin --help
+$ imagemin --help
 
   Usage
-    $ gupo-imagemin --assetsPath [压缩文件目录]
-    $ gupo-imagemin --extRE [目标文件过滤条件]
+    $ imagemin --assetsPath [压缩文件目录]
+    $ imagemin --extRE [目标文件过滤条件]
 
   Options
     --assetsPath string // default: ./src/assets
